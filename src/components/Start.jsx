@@ -5,7 +5,7 @@ import { launchImageLibrary } from "react-native-image-picker";
 import LinearGradient from "react-native-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 
-const { height } = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 const First = () => {
     const navigation = useNavigation();
@@ -81,15 +81,16 @@ const First = () => {
 //<LinearGradient colors={["#0470ec", "#012355"]} style={{width: '100%', height: '100%'}}></LinearGradient>
     return (
         <View style={{flex:1}}>
-            <ImageBackground style={{flex:1}} source={require('../assets/newDiz/bg.png')}>
+            <ImageBackground style={{flex:1,width: width,
+                                          height: height,}} source={require('../assets/newDiz/bgForSplScr.png')}>
                 
             <View style={styles.container}>
 
                 {
                     index === 0 && (
                         <View style={{width: '100%', alignItems: 'center'}}>
-                            <Image source={require('../assets/logo.png')} style={{width: 195, height: 100, resizeMode: 'contain', marginBottom: 100, marginTop: height * 0.2}} />
-                            <Text style={styles.text}>🎣 Your ultimate fishing companion! 🐟 Keep a fishing log 📸, learn about popular fish species 🌊, choose the best gear 🏕️, and master baits 🎯. Get seasonal fishing tips 🍂❄️🌿🌞 and test your skills in an exciting mini-game! 🏆</Text>
+                            <Image source={require('../assets/logo.png')} style={{width: 295, height: 200, resizeMode: 'contain', marginBottom: 100, marginTop: height * 0.2}} />
+                            
                         </View>
                     )
                 }

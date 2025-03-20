@@ -32,6 +32,10 @@ import appsFlyer from 'react-native-appsflyer';
 import AppleAdsAttribution from '@vladikstyle/react-native-apple-ads-attribution';
 import DeviceInfo from 'react-native-device-info';
 
+import { Dimensions } from 'react-native';
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+
 const App = () => {
       const [route, setRoute] = useState(false);
       //console.log('route===>', route);
@@ -553,7 +557,7 @@ const App = () => {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log(checkUrl);
 
-    const targetData = new Date('2025-03-20T10:00:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-03-23T16:00:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
@@ -751,22 +755,22 @@ const App = () => {
                                     //backgroundColor: 'rgba(0,0,0)',
                               }}>
                               <Animated.Image
-                                    source={require('./src/assets/newDiz/loader1.png')}
+                                    source={require('./src/assets/newDiz/newLouder1.png')}
                                     style={{
                                           //...props.style,
                                           opacity: appearingAnim,
-                                          width: '100%',
-                                          height: '100%',
+                                          width: windowWidth,
+                                          height: windowHeight,
                                           position: 'absolute',
                                     }}
                               />
                               <Animated.Image
-                                    source={require('./src/assets/newDiz/loader2.png')}
+                                    source={require('./src/assets/newDiz/newLouder2.png')}
                                     style={{
                                           //...props.style,
                                           opacity: appearingSecondAnim,
-                                          width: '100%',
-                                          height: '100%',
+                                          width: windowWidth,
+                                          height: windowHeight,
                                           position: 'absolute',
                                     }}
                               />
