@@ -262,7 +262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FishingMania/FishingMania.entitlements;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FishingMania/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fishing Mania: Catch & Cast";
@@ -293,7 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FishingMania/FishingMania.entitlements;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				INFOPLIST_FILE = FishingMania/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fishing Mania: Catch & Cast";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
